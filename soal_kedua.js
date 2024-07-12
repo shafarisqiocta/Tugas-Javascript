@@ -39,17 +39,16 @@ let productBin = {
   // Variabel untuk menyimpan total quantity
   let totalQuantity = 0;
   
-  // Loop melalui setiap item di data array
+  // perulangan untuk setiap item dalam array
   for (let i = 0; i < productBin.data.length; i++) {
     let item = productBin.data[i];
     
-    // Periksa apakah productCode sesuai dengan yang diinginkan
+    // periksa jika product code = FBR00040101
     if (item.productCode === "FBR00040101") {
-      // Tambahkan quantity ke totalQuantity
+      // Menambahkan quantity ke total quantity
       totalQuantity += item.quantity;
     }
   }
-  
-  // Tampilkan hasil
+  // menampilkan hasil
   console.log("Total Quantity untuk productCode 'FBR00040101':", totalQuantity);
   
